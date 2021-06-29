@@ -1,0 +1,72 @@
+.wrapTask {
+    width: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 35px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    padding: 0 30px;
+    background-color: rgb(214, 213, 213);
+}
+
+.wrapper {
+    width: 70%;
+    margin: 20px auto;
+    text-align: center;
+}
+
+.todo{
+    font-family: cursive;
+    border: none;
+    border-bottom: 1px solid rgb(95, 94, 94);
+    outline: none;
+    padding: 10px;
+    width: 40%;
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+.btn {
+    display: flex;
+}
+
+
+.checked{
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+}
+
+
+.deleteTask {
+    cursor: pointer;
+    border: 0;
+    border-radius: 10px;
+    background: #4676D7;
+    color: #fff;
+    cursor: pointer;
+    font-size: large;
+}
+
+.deleteTask:hover {
+    background-color: rgb(148, 0, 0);
+    color: white;
+}
+
+.active {
+    animation: active 0.3s ease-in-out;
+    background-color: rgb(16, 156, 3);
+    text-decoration: royalblue;
+}
+
+
+@keyframes active {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 0.5;
+    }
+}
